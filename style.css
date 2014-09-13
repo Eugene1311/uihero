@@ -8,7 +8,7 @@ a{
 }
 @font-face {
     font-family: Gotham; /* Гарнитура шрифта */
-    src: url(fonts/Gotham.ttf),url(fonts/Gotham Cyrillic); /* Путь к файлу со шрифтом */
+    src: url(fonts/Gotham.ttf),url(fonts/Gotham Cyrillic/); /* Путь к файлу со шрифтом */
 }
 ul{
 	list-style: none;	
@@ -30,8 +30,10 @@ header{
 nav{
     height:100px ;
     position:fixed;
+	top:0;
     width:1240px;
     background:rgba(51,51,51, .8);
+    z-index: 10;
 }
 nav ul{
     margin-left:410px;
@@ -70,14 +72,13 @@ nav ul li a:hover{
     font-family:Gotham;
     font-size:17px;
     line-height:22px;
-    //width:400px;
 }
 .blog-text h3{
     font-size:26px;
     font-family:Gotham;
     color:#666666;
 }
-img#imac{
+#imac{
    float:left;
    margin:135px 0 0 162px; 
 }
@@ -90,7 +91,7 @@ img#imac{
     float:left;
     margin:150px 0 0 160px;
 }
-img#video{
+#video{
     float: right;
     margin:175px 165px 110px 0;
 }
@@ -136,7 +137,7 @@ img#video{
     font-size:17px;
     color:#999999;
 }
-p.bottom_line {
+.bottom_line {
 	font-size:17px;
 	border-bottom: 1px solid #cbcbcb;
 	padding-bottom: 35px;
@@ -156,9 +157,9 @@ button{
 	color:#FFF;
 	font-family: Gotham;
 	font-size:19px;
-	box-shadow:0 3px 0 -2px #279052;
 	-webkit-box-shadow:0 3px 0 -2px #279052;
 	-moz-box-shadow:0 3px 0 -2px #279052;
+    box-shadow:0 3px 0 -2px #279052;
 	cursor: pointer;
 }
 .about_me_content ul li img {
@@ -198,7 +199,7 @@ p.copy {
     color:#626f81;
     font-size:19px;
 }
-img#studio_img{
+#studio_img{
     margin:90px 155px 145px;
 }
 .price {
@@ -217,7 +218,7 @@ img#studio_img{
 .column p{
     font-size: 20px;
     color:#999999;
-    margin-top:0px;
+    margin-top:0;
     line-height:22px;
 }
 .column h3{
@@ -241,14 +242,14 @@ img#studio_img{
     padding-top:60px;
     margin-bottom: 90px;
 }
-p.messages {
+.messages {
   margin-top: 55px;  
 }
 .example {
     margin:0;
 }
 /*Section #works*/
-img#works {
+#works {
     margin:0 155px 95px;
 }
 .our_works{
@@ -270,7 +271,6 @@ img#works {
     padding-top:120px;
 }
 .contact {
-    height:430px;
     background: #333b46;
     text-align: center;
     height:950px;
@@ -301,7 +301,7 @@ footer p{
     color:#75777b;
     height:30px;
 }
-p#icons {
+#icons {
     background: url(img/sprite.png) no-repeat;
     padding-left:165px;
     width: 145px;
@@ -309,13 +309,10 @@ p#icons {
     line-height: 25px;
     margin:40px 0 0 150px;
 }
-p#copyright {
+#copyright {
     background: url(img/copyright_img.png) no-repeat;
     padding-left:40px;
     float:right;
     line-height: 30px;
     margin:40px 125px 0 0 ;
 }
-
-
-
