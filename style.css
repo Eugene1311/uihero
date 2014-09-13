@@ -7,8 +7,8 @@ a{
     color:#fff;
 }
 @font-face {
-    font-family: Gotham; /* Гарнитура шрифта */
-    src: url(fonts/Gotham.ttf),url(fonts/Gotham Cyrillic/); /* Путь к файлу со шрифтом */
+    font-family: 'Gotham'; /* Гарнитура шрифта */
+    src: url(fonts/Gotham.ttf); /* Путь к файлу со шрифтом */
 }
 ul{
 	list-style: none;	
@@ -69,13 +69,13 @@ nav ul li a:hover{
 }
 /*Section #blog*/
 .blog-text{
-    font-family:Gotham;
+    font-family:'Gotham';
     font-size:17px;
     line-height:22px;
 }
 .blog-text h3{
     font-size:26px;
-    font-family:Gotham;
+    font-family:'Gotham';
     color:#666666;
 }
 #imac{
@@ -93,12 +93,12 @@ nav ul li a:hover{
 }
 #video{
     float: right;
-    margin:175px 165px 110px 0;
+    margin:175px 155px 110px 0;
 }
 .button{
     padding:10px 20px;
     border-radius:5%;
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-size:15px;
 }
 .button-right{
@@ -133,7 +133,7 @@ nav ul li a:hover{
 	color:#444e5d;
 }
 .about_me p {
-    font-family:Gotham;
+    font-family:'Gotham';
     font-size:17px;
     color:#999999;
 }
@@ -155,7 +155,7 @@ button{
 	background:#1fab5a;
 	border-radius:7px;
 	color:#FFF;
-	font-family: Gotham;
+	font-family: 'Gotham';
 	font-size:19px;
 	-webkit-box-shadow:0 3px 0 -2px #279052;
 	-moz-box-shadow:0 3px 0 -2px #279052;
@@ -170,14 +170,14 @@ button{
     background: url(img/tick.png) no-repeat;
     padding-left: 25px;
     height:25px;
-    font-family:Gotham;
+    font-family:'Gotham';
     font-size:17px;
 	color:#999999;
     margin-bottom: 15px;
 }
-p.copy {
+.copy {
 	color:#323a45;
-	font-family: Gotham;
+	font-family:'Gotham';
 	font-size: 27px;
 }
 #phone {
@@ -185,7 +185,7 @@ p.copy {
 }
 /*Studio*/
 .text_center{
-    font-family: Gotham;
+    font-family:'Gotham';
     font-size:19px;
     width:400px;
     margin:35px auto;
@@ -211,14 +211,13 @@ p.copy {
     border:1px solid #a6a6a6;
     width:265px;
     height:400px;
-    font-family: Gotham;
+    font-family:'Gotham';
     text-align: center;
     margin-right:45px;
 }
 .column p{
     font-size: 20px;
     color:#999999;
-    margin-top:0;
     line-height:22px;
 }
 .column h3{
@@ -260,7 +259,7 @@ p.copy {
     height:80px;
 }
 .our_works span{
-    font-family: Gotham;
+    font-family:'Gotham';
     font-size: 27px;
     font-weight: bold;
     color:#444e5d;
@@ -276,14 +275,14 @@ p.copy {
     height:950px;
 }
 .contact h3 {
-    font-family: Gotham;
+    font-family:'Gotham';
     font-size:27px;
     color:white;
     margin-top:60px;
     margin-bottom:35px;
 }
 .contact p {
-    font-family: Gotham;
+    font-family: 'Gotham';
     font-size:22px;
     color:#dad9d9;
     margin-bottom:55px;
