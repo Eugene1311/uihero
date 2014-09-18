@@ -10,10 +10,15 @@ $(function () {
         $(this).toggleClass("active");
         var aId = $(this).attr("href");
         if (aId != "#") {
-            $('nav').fadeTo("slow" , 0.2);
+            $('nav').slideUp("slow");
         }
+        $(window).scroll(function () {
+        //alert("Вы прокрутили содержимое данного окна.");
+        $('nav').slideDown("slow");   
     });
-    $('nav').mousedown(function () {
+    });
+    /*$('nav').mousedown(function () {
         $(this).fadeTo("slow" , 0.8);    
-    });
+    });*/
+    
 });

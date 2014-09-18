@@ -247,12 +247,9 @@ button{
     margin:0;
 }
 /*Section #works*/
-#works {
-    margin:0 155px 95px;
-}
 .our_works{
     margin:40px 205px;
-    background: url(img/works_arrow_prev.png) no-repeat 97% 50%,url(img/works_arrow_next.png) no-repeat right;
+    background: url(../img/works_arrow_prev.png) no-repeat 97% 50%,url(../img/works_arrow_next.png) no-repeat right;
     border-bottom: 1px solid #cecdcd;
     text-align: center;
     height:80px;
@@ -262,6 +259,9 @@ button{
     font-size: 27px;
     font-weight: bold;
     color:#444e5d;
+}
+#works-img{
+    margin:0 155px;
 }
 /*Section #contact*/
 #contact{
