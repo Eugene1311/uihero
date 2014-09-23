@@ -7,8 +7,8 @@ a{
     color:#fff;
 }
 @font-face {
-    font-family: 'Gotham'; /* Гарнитура шрифта */
-    src: url(fonts/Gotham.ttf); /* Путь к файлу со шрифтом */
+    font-family:'Gotham'; /* Гарнитура шрифта */
+    src: url(../fonts/Gotham.ttf); /* Путь к файлу со шрифтом */
 }
 ul{
 	list-style: none;	
@@ -18,7 +18,7 @@ ul{
 }
 /*Header & slider*/
 header{  
-    background:url(img/header_bg_min.jpg);
+    background:url(../img/header_bg_min.jpg);
     height:685px;
     margin:0;
     padding:0;
@@ -48,9 +48,12 @@ nav ul li a{
     font:small arial;
     vertical-align: middle;
     padding: 5px 10px;
-    border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
 }
 nav ul li a:hover{
     background:#ff3366;
@@ -81,11 +84,11 @@ nav ul li a:hover{
    float:left;
    margin:135px 0 0 160px; 
 }
-#right-text {
+.right-text {
     float:right;
     margin:120px 155px 0 0;
 }
-#left-text {
+.left-text {
     clear:both;
     float:left;
     margin:150px 0 0 155px;
@@ -166,7 +169,7 @@ button{
 	top:5px;
 }
 .tick {
-    background: url(img/tick.png) no-repeat;
+    background: url(../img/tick.png) no-repeat;
     padding-left: 25px;
     height:25px;
     font-family:'Gotham';
@@ -243,9 +246,6 @@ button{
 .messages {
   margin-top: 55px;  
 }
-.example {
-    margin:0;
-}
 /*Section #works*/
 .our_works{
     margin:40px 205px;
@@ -261,7 +261,7 @@ button{
     color:#444e5d;
 }
 #works-img{
-    margin:0 155px;
+    margin:0 155px 95px;
 }
 /*Section #contact*/
 #contact{
@@ -300,7 +300,7 @@ footer p{
     height:30px;
 }
 #icons {
-    background: url(img/sprite.png) no-repeat;
+    background: url(../img/sprite.png) no-repeat;
     padding-left:165px;
     width: 145px;
     float:left;
@@ -308,7 +308,7 @@ footer p{
     margin:40px 0 0 150px;
 }
 #copyright {
-    background: url(img/copyright_img.png) no-repeat;
+    background: url(../img/copyright_img.png) no-repeat;
     padding-left:40px;
     float:right;
     line-height: 30px;
