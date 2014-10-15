@@ -3,23 +3,49 @@ if ($ === undefined) {
 } else {
    console.log('Версия jQuery: ' + $.fn.jquery);
 }
-$(function () {
-		
+$(function(){ // on document load
+	$('#horizontalmenu').ddscrollSpy({ // initialize first demo
+		scrolltopoffset: -100
+	})
+	$('.arrow-next').click(function() {
+		var currentSlide = $('.active-slide');
+    	var nextSlide = currentSlide.next();
+		var currentDot = $('.active-dot');
+    	var nextDot = currentDot.next();
+		if(nextSlide.length === 0) {
+		  nextSlide = $('.slide').first();
+		  nextDot = $('.dot').first();
+		}
+		currentSlide.fadeOut(600).removeClass('active-slide');
+    	nextSlide.fadeIn(600).addClass('active-slide');
+		currentDot.removeClass('active-dot');
+    	nextDot.addClass('active-dot');
+	});
+	$('.arrow-prev').click(function() {
+		var currentSlide = $('.active-slide');
+    	var prevSlide = currentSlide.prev();
+		var currentDot = $('.active-dot');
+    	var prevDot = currentDot.prev();
+		if(prevSlide.length === 0) {
+		  prevSlide = $('.slide').last();
+		  prevDot = $('.dot').last();
+		}
+		currentSlide.fadeOut(600).removeClass('active-slide');
+		prevSlide.fadeIn(600).addClass('active-slide');
+		currentDot.removeClass('active-dot');
+    	prevDot.addClass('active-dot');
+	});
+});
+	/*var scrolling = $(window).scroll(function () {
+        		$('nav').slideDown("slow");
+    		});
     $('nav ul li a').click(function () {
-        //$('nav').fadeTo("slow" , 0.8);
         $('nav ul li a').removeClass("active");
         $(this).addClass("active");
         var aId = $(this).attr("href");
         if (aId !== "#") {
-			//$(window).off(scroll);
-            $('nav').slideUp('slow');
-				
-		}
-    });
-	$(window).on();
-	$(window).scroll(function () {
-        //alert("Вы прокрутили содержимое данного окна.");
-        $('nav').slideDown("slow");
-	});
-	
-});
+            $('nav').slideUp("slow",function (e) {
+        		//e.stopImmediatePropagation();
+    		});
+		 }
+    });*/

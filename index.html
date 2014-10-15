@@ -2,53 +2,79 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <!--<link rel="stylesheet" href="css/reset.css">-->     
-  <link rel="stylesheet" href="css/style.css">   
-  <script src="js/jquery-1.11.1.min.js"></script> 
-  <script src="js/script.js"></script>
-  <title>Вёрстка из PSD-шаблона</title>  
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <!--<link rel="stylesheet" href="css/reset.css">-->     
+	 <link rel="stylesheet" href="css/style.css"/> 
+	 <script src="js/jquery-1.11.1.min.js"></script>
+	 <script src="js/ddscrollspy.js"></script>
+	 <script src="js/script.js"></script>
+  	 <title>Вёрстка из PSD-шаблона</title> 
  </head>
  <body>
-     <header>
-        <div id="header-background">
-         <nav>
-            <div id="logo">
-            <img src="img/logo_min.png"/>    
-            </div>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#studio">studio</a></li>
-                <li><a href="#works">works</a></li>
-                <li><a href="#about_me">about me</a></li>
-                <li><a href="#blog">blog</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-         </nav> 
-         <div class="slider">
-             <img id="slider" src="img/slider_img.png"/>
-         </div>
-        </div> 
+	<header id="home">
+        <div class="header-background">
+			 <nav>
+				<div class="logo">
+					<a href="#"><img src="img/logo_min.png" alt="Логотип"/></a>    						</div>
+				<ul id="horizontalmenu">
+					<li><a href="#home">home</a></li>
+					<li><a href="#studio">studio</a></li>
+					<li><a href="#about_me">about me</a></li>
+					<li><a href="#blog">blog</a></li>
+					<li><a href="#works">works</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+			 </nav> 
+			 <div class="slider">
+				 <div class="slide active-slide">
+					<img src="img/slider_img1.png" />
+				 </div>
+				 <div class="slide">
+					<img  src="img/about_me_img.png" />
+				 </div>
+				 <div class="slide">
+					<img  src="img/twitter_img.png" />
+				 </div>
+				 <div class="slide">
+					<img  src="img/about_me_img.png" />
+				 </div>
+				 <div class="slide">
+					<img  src="img/twitter_img.png" />
+				 </div>
+			</div>
+			<div class="arrows">
+				 <a href="#" class="arrow-prev"><img src="img/slider_arrow_prev.png" /></a>
+				 <a href="#" class="arrow-next"><img src="img/slider_arrow_next.png" /></a>
+			</div>
+			<ul class="slider-dots">
+				<li class="dot active-dot"></li>
+				<li class="dot"></li>
+				<li class="dot"></li>
+				<li class="dot"></li>
+				<li class="dot"></li>
+			</ul>
+		 </div> 
      </header> 
-     <section id="blog">
-         <img id="imac" src="img/imac.png"/>
-         <div class="blog-text right-text">
+     <section id="studio" class="studio">
+         <img id="imac" src="img/imac.png" alt="Макинтош" />
+         <div class="studio-text right-text">
              <h3>Web & Mobile Landing Page</h3>
              <p class="red">Simple & Elegant User Interface</p>
              <p class="text">One morning, when Gregor Samsa woke from<br/> troubled dreams, he himself transformed in<br/> bed into a horrible vermin. He his ar-<br/>mour-back.</p>
              <a href="#" class="button button-right">Readmore</a>
          </div>
-         <div class="blog-text left-text">
+         <div class="studio-text left-text">
              <h3>Video Promotional on vimeo</h3>
              <p class="green">Simple & Elegant User Interface</p>
              <p class="text">One morning, when Gregor Samsa woke from<br/> troubled dreams, he himself transformed in<br/> bed into a horrible vermin. He his ar-<br/>mour-back.</p>
              <a href="#" class="button button-left">Moredetail</a>
          </div>
-         <img id="video" src="img/video.png"/>
-         <div class="blog-line"></div>
+         <img id="video" src="img/video.png" alt="Видео с vimeo" />
+         <div class="studio-line"></div>
      </section>
      <section id="about_me">
          <div class="about_me">
-           <img src="img/about_me_img.png"/>
+           <img src="img/about_me_img.png" alt="Обо мне" />
             <div class="about_me_content">
                 <h3>Flat & Modern transparent</h3>
                 <p>flat inspired UI with some modern transparent Element</p>
@@ -60,17 +86,19 @@
                     <dt class="tick">All Fonts used Link Includ-</dt>
                 </dl>
                 <p class="copy">Get Now Your <strong>Copy</strong> just for <strong>7$</strong></p>
-                <button>Download Now</button>
+                <form method="">
+                	<button>Download Now</button>
+                </form>
             </div>
-            <img id="phone" src="img/phone.gif"/>
+            <img id="phone" src="img/phone.gif" alt="телефон" />
         </div>
      </section>
-     <section id="studio">
+     <section id="blog">
      	<div class="text_center">
             <h3>Our Clients</h3>
             <p>Voyez ce jeu exquis wallon</p>
         </div>
-        <img id="studio_img" src="img/studio_icons.png" /> 
+        <img id="blog_img" src="img/blog_icons.png" alt="логотипы клиентов студии" /> 
         <div class="price">
             <div class="text_center price-header">
                 <h3>Pricing Table</h3>
@@ -84,7 +112,9 @@
                     <p><strong>Unlimited</strong> data</p>
                     <p><strong>Unlimited</strong> users</p>
                     <p>first 30 days free</p>
-                    <button class="sign_up">Sign up</button>
+                    <form method="">
+                    	<button class="sign_up">Sign up</button>
+                    </form>
                 </div>
                 <div class="column center-column">
                     <h3>Medium</h3> 
@@ -93,7 +123,9 @@
                     <p><strong>Unlimited</strong> data</p>
                     <p><strong>Unlimited</strong> users</p>
                     <p>first 30 days free</p>
-                    <button class="sign_up">Sign up</button>
+                    <form method="">
+                    	<button class="sign_up">Sign up</button>
+                    </form>
                 </div>
                 <div class="column left-column">
                     <h3>Large</h3> 
@@ -102,7 +134,9 @@
                     <p><strong>Unlimited</strong> data</p>
                     <p><strong>Unlimited</strong> users</p>
                     <p>first 30 days free</p>
-                    <button class="sign_up">Sign up</button>
+                    <form method="">
+                    	<button class="sign_up">Sign up</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -111,14 +145,16 @@
         <div class="our_works">
             <span>Our Works</span>
         </div>    
-        <img id="works-img" src="img/works_img.png" />   
+        <img id="works-img" src="img/works_img.png"  alt="наши работы" />   
      </section>
      <section id="contact">
          <div class="contact">
-         <img src="img/twitter_img.png" />
+         <img src="img/twitter_img.png" alt="твиттер" />
             <h3>SO WHAT YOU THINK ?</h3>
             <p>"Good design is all about making other designers feel like idiots because<br> that idea wasn't theirs."</p>
-            <button id="contact_me">Contact Me</button>
+            <form method="">
+            	<button id="contact_me">Contact Me</button>
+            </form>
          </div>
      </section>
      <footer>
