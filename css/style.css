@@ -115,6 +115,7 @@ nav ul li a:hover, ul li a.selected{
 	height:10px;
 	border-radius: 50%;
 	background: rgba(35,40,47,1);
+	cursor:pointer;
 }
 li.active-dot{
 	background-color: rgba(109,125,146,1);
@@ -353,12 +354,10 @@ footer p{
     height:30px;
 }
 #icons {
-    background: url(../img/sprite.png) no-repeat;
-    padding-left:165px;
     width: 145px;
     float:left;
     line-height: 25px;
-    margin:40px 0 0 150px;
+    margin:40px 0 0 5px;
 }
 #copyright {
     background: url(../img/copyright_img.png) no-repeat;
@@ -366,4 +365,20 @@ footer p{
     float:right;
     line-height: 30px;
     margin:40px 125px 0 0 ;
+}
+.social{
+	width:151px;
+	height: 30px;
+	float:left;
+	margin:38px 0 0 150px;
+	background: url(../img/sprite.png) no-repeat;
+}
+.social a{
+	width:30px;
+	height:30px;
+	display: inline-block;
+	margin-right:6px;
+}
+a.be{
+	margin-right:0;
 }
